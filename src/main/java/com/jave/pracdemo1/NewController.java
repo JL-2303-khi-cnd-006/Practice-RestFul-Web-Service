@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class NewController {
 
     private final AtomicLong counter = new AtomicLong();
-    private final String template = "Hello, %s, its a fine day.";
+    private final String template = "Hello, %s, its a %s day.";
 
     @GetMapping("/greeting")
     public Hey Hey(@RequestParam(value = "name", defaultValue = "Everyone") String name){
